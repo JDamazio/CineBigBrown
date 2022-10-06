@@ -1,0 +1,26 @@
+### Cadastrar filme no Cartaz
+POST https://localhost:5001/api/cartaz/cadastrar
+Content-Type: application/json
+
+{
+    "movieName" : "A noite da Catiucha",
+    "date" : "2023-11-23",
+    "value" : 0
+}
+
+### Listagem do Cartaz 
+GET https://localhost:5001/api/cartaz/listar
+
+### Alterando as informações
+PATCH  https://localhost:5001/api/cartaz/alterar
+Content-Type: application/json
+
+{
+    "cartazId" : 3,
+    "movieName" : "ATT",
+    "date" : "2000-10-02",
+    "value" : 1.0
+}
+
+### Delentando o cartaz
+DELETE https://localhost:5001/api/cartaz/deletar/4
